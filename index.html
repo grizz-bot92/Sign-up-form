@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+</head>
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="images/odin-logo.png" alt="odin logo">
+            <h1>ODIN</h1>
+        </div>
+        <p id="plant-photo">Photo by<a id="img-credit" href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a>on<a id="img-credit" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>
+    </div>
+
+    <div class="right">
+        <p class="first-paragraph">This is not a real online service! You know you need something<br>like this in your life to help you realize your deepest dreams.
+            <br>Sign up <em>now</em> to get started.</p>
+
+        <p class="second-paragraph">You <em>know</em> you want to.</p>
+    
+        <form action="/submit" method="post">
+            <section>
+                <h2>Lets do this!</h2>
+                <div class="signup">
+                    
+                            <div class="form-entry">
+                                <label for="firstname">First Name</label>
+                                <input type="text" id="firstname" name="firstname" required>
+                            </div>
+
+                            <div class="form-entry">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" id="lastname" name="lastname" required>
+                            </div>
+    
+                            <div class="form-entry">
+                                <label for="mail">Email</label>
+                                <input type="email" id="mail" name="user_email" required/>
+                            </div>
+
+                            <div class="form-entry">
+                                <label for="number">Phone Number</label>
+                                <input type="tel" id="number" name="phonenumber" required>
+                            </div>
+                                
+                            <div class="form-entry">
+                                <label for="password">*Password</label>
+                                <input type="text" id="password"  required minlength="8">
+                            </div>
+
+                            <div class="form-entry">
+                                <label for="confirm">Confirm Password</label>
+                                <input type="text" id="confirm" required pattern=".{8,}">
+                            </div>
+                                
+                        </div>
+            </section>
+        </form>
+
+        <button type="submit">Create account</button>
+        <p id="verify">Already have an account? <a id="log-in" href="not_real_site">Log in</a></p>
+    </div>
+</body>
+</html>
+
+  
